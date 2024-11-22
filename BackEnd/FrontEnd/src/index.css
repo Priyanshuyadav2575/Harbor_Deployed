@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background:rgb(216, 233, 235);
+
+}
+
+/* Custom styling for the left and right arrows */
+.react-multiple-carousel__arrow--left,
+.react-multiple-carousel__arrow--right {
+  background-color: rgb(180, 52, 171) !important;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-multiple-carousel__arrow--left:before,
+.react-multiple-carousel__arrow--right:before {
+  color: white;
+}
+
+.react-multiple-carousel__arrow--left:hover,
+.react-multiple-carousel__arrow--right:hover {
+  background-color: #872d4c !important; /* Lighter pink on hover */
+}
