@@ -19,7 +19,7 @@ export const AuthProvider=({children})=> {
               console.log(token);
               if (token) {
                 const { data } = await axios.get(
-                  "http://localhost:4000/api/users/my-profile",
+                  "https://harbor-deployed.onrender.com/api/users/my-profile",
                   {
                     withCredentials: true,
                     headers: {
@@ -38,7 +38,7 @@ export const AuthProvider=({children})=> {
 
         const fetchBlogs=async()=>{
             try {
-                const response=await axios.get("http://localhost:4000/api/blogs/all-blogs")
+                const response=await axios.get("https://harbor-deployed.onrender.com/api/blogs/all-blogs")
                 console.log(response)
                 setBlogs(response.data)
 

@@ -8,7 +8,7 @@ function Creator() {
     const fetchAdmins = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/users/admins",
+          "https://harbor-deployed.onrender.com/api/users/admins",
           { withCredentials: true }
         );
         console.log(data);
